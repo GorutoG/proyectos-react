@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eef2f7;
+  color: #1f2937;
+}
+
+.app {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  color: #111827;
+  margin-bottom: 10px;
+  font-size: 38px;
+}
+
+.pendientes {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #374151;
+}
+
+/* Formulario */
+.formulario {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #9ca3af;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #111827;
+  background-color: #ffffff;
+}
+
+.formulario input::placeholder,
+.formulario textarea::placeholder {
+  color: #6b7280;
+}
+
+.formulario textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Botones */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+.formulario button {
+  width: 100%;
+  margin: 0;
+}
+
+/* Botón de filtro */
+.filtro {
+  display: block;
+  margin: 20px auto;
+  background-color: #374151;
+}
+
+.filtro:hover {
+  background-color: #1f2937;
+}
+
+/* Lista de tareas */
+.lista-tareas {
+  display: grid;
+  gap: 15px;
+}
+
+.tarea {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 5px solid #2563eb;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.tarea h2 {
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.tarea p {
+  margin-bottom: 10px;
+  color: #374151;
+  line-height: 1.5;
+}
+
+/* Tareas completadas */
+.tarea.completada {
+  border-left-color: #16a34a;
+  opacity: 0.85;
+}
+
+.tarea.completada h2 {
+  text-decoration: line-through;
+  color: #4b5563;
+}
